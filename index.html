@@ -7,6 +7,16 @@
   <title>Document</title>
 </head>
 <body>
-  시작
+    <div id="root"></div>
 </body>
+<script>
+  let root = document.getElementById("root");
+  for(let a=2; a<10; a++) {
+  for(let i=1; i<10; i++) {
+    let h2 = document.createElement("div");
+    h2.textContent = (a+"*"+i+"="+(a*i));
+    root.appendChild(h2);
+  }};
+
+</script>
 </html>
